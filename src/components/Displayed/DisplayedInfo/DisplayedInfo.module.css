@@ -1,0 +1,18 @@
+.DisplayedInfo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DisplayedInfo h2 {
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+
+.DisplayedInfo p {
+  font-size: 2em;
+  letter-spacing: 2px;
+}

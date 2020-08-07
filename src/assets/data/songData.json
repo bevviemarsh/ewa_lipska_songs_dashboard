@@ -1,0 +1,108 @@
+{
+  "songsNumberByAuthor": [
+    {
+      "id": 0,
+      "author": "Zbigniew Preisner",
+      "songsNumber": 20
+    },
+    {
+      "id": 1,
+      "author": "Grzegorz Turnau",
+      "songsNumber": 7
+    },
+    {
+      "id": 2,
+      "author": "Anna Szałapak",
+      "songsNumber": 14
+    },
+    {
+      "id": 3,
+      "author": "Wawele (Jan Wojdak)",
+      "songsNumber": 13
+    },
+    {
+      "id": 4,
+      "author": "Skaldowie",
+      "songsNumber": 2
+    },
+    {
+      "id": 5,
+      "author": "Marek Grechuta",
+      "songsNumber": 2
+    },
+    {
+      "id": 6,
+      "author": "Ewa Błaszczyk",
+      "songsNumber": 1
+    }
+  ],
+  "textGenre": [
+    {
+      "id": 0,
+      "genre": "song",
+      "number": 48
+    },
+    {
+      "id": 1,
+      "genre": "used poem",
+      "number": 10
+    },
+    {
+      "id": 2,
+      "genre": "unused song",
+      "number": 1
+    },
+    {
+      "id": 3,
+      "genre": "unused poem",
+      "number": 1
+    }
+  ],
+  "sourcesOfText": [
+    {
+      "id": 0,
+      "type": "book",
+      "number": 2,
+      "authors": ["Anna Szałapak"]
+    },
+    {
+      "id": 1,
+      "type": "cd insert",
+      "number": 7,
+      "authors": ["Grzegorz Turnau", "Zbigniew Preisner"]
+    },
+    {
+      "id": 2,
+      "type": "unknown",
+      "number": 3,
+      "authors": ["Wawele (Jan Wojdak)", "Skaldowie", "Ewa Błaszczyk"]
+    }
+  ],
+  "genreSourceRelation": [
+    {
+      "id": 0,
+      "relation": "song written in book",
+      "number": 13
+    },
+    {
+      "id": 1,
+      "relation": "song written in cd insert",
+      "number": 21
+    },
+    {
+      "id": 2,
+      "relation": "poem written in cd insert",
+      "number": 9
+    },
+    {
+      "id": 3,
+      "relation": "poem written in book and cd insert",
+      "number": 8
+    },
+    {
+      "id": 4,
+      "relation": "sung poem written only in book",
+      "number": 2
+    }
+  ]
+}

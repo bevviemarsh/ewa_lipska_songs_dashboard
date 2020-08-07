@@ -1,0 +1,18 @@
+.Bio {
+  width: 100%;
+  height: 20%;
+  background: var(--aside-color);
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px 1px var(--border-color);
+  text-align: justify;
+}
+
+.Bio h4 {
+  font-size: 3vh;
+  margin: 7px 5px;
+}
+
+.Bio p {
+  font-size: 2vh;
+  margin: 7px 5px;
+}
