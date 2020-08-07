@@ -10,7 +10,7 @@ class ChartsNavigation extends Component {
       { title: "Bar", pathName: "/charts/bar/:bar" },
       { title: "Radar", pathName: "/charts/radar/:radar" },
       { title: "Polar", pathName: "/charts/polar/:polar" },
-      { title: "Pie", pathName: "/charts/pie/:pie" },
+      { title: "Doughnut", pathName: "/charts/pie/:pie" },
     ],
   };
 

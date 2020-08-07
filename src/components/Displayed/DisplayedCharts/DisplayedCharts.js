@@ -203,7 +203,7 @@ class DisplayedCharts extends Component {
         labels: this.state.relationType,
         datasets: [
           {
-            label: "Genre of text related to the source of text",
+            label: "genre-source text's relation",
             barThickness: bar_width,
             data: this.state.relationNumber,
             backgroundColor: this.getDataBackgroundColors(),
@@ -211,7 +211,11 @@ class DisplayedCharts extends Component {
         ],
       },
       barOptions: {
-        title: this.getTitleHandler("Bar Chart", font_size_title, font_color),
+        title: this.getTitleHandler(
+          "Genre of text related to the source of text",
+          font_size_title,
+          font_color
+        ),
         legend: this.getLegendHandler(font_size_legend, font_color),
         tooltips: this.getTooltipHandler(
           getBackgroundColor(0.8),
@@ -266,7 +270,7 @@ class DisplayedCharts extends Component {
         labels: this.state.authors,
         datasets: [
           {
-            label: "Number of songs (by authors)",
+            label: "number of songs",
             data: this.state.songsByAuthors,
             backgroundColor: this.getDataBackgroundColors(),
             pointRadius: 7,
@@ -300,7 +304,11 @@ class DisplayedCharts extends Component {
             fontColor: font_color,
           },
         },
-        title: this.getTitleHandler("Radar Chart", font_size_title, font_color),
+        title: this.getTitleHandler(
+          "Number of songs (by authors)",
+          font_size_title,
+          font_color
+        ),
         legend: this.getLegendHandler(font_size_legend, font_color),
         tooltips: this.getTooltipHandler(
           getBackgroundColor(0.8),
@@ -336,7 +344,7 @@ class DisplayedCharts extends Component {
         ],
       },
       polarOptions: {
-        title: this.getTitleHandler("Polar Chart", font_size_title, font_color),
+        title: this.getTitleHandler("Genres", font_size_title, font_color),
         tooltips: this.getTooltipHandler(
           getBackgroundColor(0.8),
           getLabelColors(0.7),
@@ -384,7 +392,7 @@ class DisplayedCharts extends Component {
       doughnutOptions: {
         cutoutPercentage: 70,
         title: this.getTitleHandler(
-          "Doughnut Chart",
+          "Type of source",
           font_size_title,
           font_color
         ),
