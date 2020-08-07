@@ -39,7 +39,7 @@ The application is only the part of bigger projet related to the visualization o
 
 #### Sources
 
-Please note, this application is the second step during the complex works concentrated on Ewa Lipska's writings research. The first step is possible to find [here](https://bevviemarsh.github.io/el_bibliography_dashboard/, "Ewa Lipska - general bibliography dashboard").
+Please note, this application is the second step during the complex works concentrated on Ewa Lipska's writings research. The first step is possible to find [here](https://bevviemarsh.github.io/el_bibliography_dashboard/ "Ewa Lipska - general bibliography dashboard").
 
 #### Other info
 
