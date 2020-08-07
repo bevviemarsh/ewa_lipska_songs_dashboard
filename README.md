@@ -31,7 +31,7 @@ Project is created with:
 
 ### Launch
 
-The app is available [here]( "Ewa Lipska - song data dashboard")
+The app is available [here](https://bevviemarsh.github.io/ewa_lipska_songs_dashboard/ "Ewa Lipska - song data dashboard")
 
 #### Project Status
 
