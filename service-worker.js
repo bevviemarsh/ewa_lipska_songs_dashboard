@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ewa_lipska_songs_dashboard/precache-manifest.b1ea340e2673ccfec9bb137dd67730f9.js"
+  "/ewa_lipska_songs_dashboard/precache-manifest.f97f74b369e43cdc377504edca6c95b4.js"
 );
 
 self.addEventListener('message', (event) => {
