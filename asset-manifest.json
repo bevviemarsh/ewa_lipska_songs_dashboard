@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ewa_lipska_songs_dashboard/static/css/main.e24d2b7c.chunk.css",
-    "main.js": "/ewa_lipska_songs_dashboard/static/js/main.cb7961ca.chunk.js",
-    "main.js.map": "/ewa_lipska_songs_dashboard/static/js/main.cb7961ca.chunk.js.map",
+    "main.js": "/ewa_lipska_songs_dashboard/static/js/main.d3154f3f.chunk.js",
+    "main.js.map": "/ewa_lipska_songs_dashboard/static/js/main.d3154f3f.chunk.js.map",
     "runtime-main.js": "/ewa_lipska_songs_dashboard/static/js/runtime-main.15a6a446.js",
     "runtime-main.js.map": "/ewa_lipska_songs_dashboard/static/js/runtime-main.15a6a446.js.map",
     "static/js/2.e6b2fcd3.chunk.js": "/ewa_lipska_songs_dashboard/static/js/2.e6b2fcd3.chunk.js",
     "static/js/2.e6b2fcd3.chunk.js.map": "/ewa_lipska_songs_dashboard/static/js/2.e6b2fcd3.chunk.js.map",
     "index.html": "/ewa_lipska_songs_dashboard/index.html",
-    "precache-manifest.99e99d0c0f23b88801be525c335172a2.js": "/ewa_lipska_songs_dashboard/precache-manifest.99e99d0c0f23b88801be525c335172a2.js",
+    "precache-manifest.4051abc76b27ae0aeeddea416eaa8536.js": "/ewa_lipska_songs_dashboard/precache-manifest.4051abc76b27ae0aeeddea416eaa8536.js",
     "service-worker.js": "/ewa_lipska_songs_dashboard/service-worker.js",
     "static/css/main.e24d2b7c.chunk.css.map": "/ewa_lipska_songs_dashboard/static/css/main.e24d2b7c.chunk.css.map",
     "static/js/2.e6b2fcd3.chunk.js.LICENSE.txt": "/ewa_lipska_songs_dashboard/static/js/2.e6b2fcd3.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.15a6a446.js",
     "static/js/2.e6b2fcd3.chunk.js",
     "static/css/main.e24d2b7c.chunk.css",
-    "static/js/main.cb7961ca.chunk.js"
+    "static/js/main.d3154f3f.chunk.js"
   ]
 }
