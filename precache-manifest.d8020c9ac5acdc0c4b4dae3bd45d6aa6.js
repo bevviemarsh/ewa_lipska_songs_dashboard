@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b0983d9848420c786ebd5561fec194ed",
+    "revision": "5130dadc3f3a7b5e5d3adb40cea0fff9",
     "url": "/ewa_lipska_songs_dashboard/index.html"
   },
   {
-    "revision": "20124394503de6bf7365",
+    "revision": "85986cf8d7eca9ea6b44",
     "url": "/ewa_lipska_songs_dashboard/static/css/main.13581302.chunk.css"
   },
   {
-    "revision": "a730b3f4f84250a7db02",
-    "url": "/ewa_lipska_songs_dashboard/static/js/2.3b1faefe.chunk.js"
+    "revision": "59bf17c4cfcb1aec7636",
+    "url": "/ewa_lipska_songs_dashboard/static/js/2.e39982a5.chunk.js"
   },
   {
     "revision": "2903f65e346887768e2d109a63fdd7a4",
-    "url": "/ewa_lipska_songs_dashboard/static/js/2.3b1faefe.chunk.js.LICENSE.txt"
+    "url": "/ewa_lipska_songs_dashboard/static/js/2.e39982a5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "20124394503de6bf7365",
-    "url": "/ewa_lipska_songs_dashboard/static/js/main.1c23c9d5.chunk.js"
+    "revision": "85986cf8d7eca9ea6b44",
+    "url": "/ewa_lipska_songs_dashboard/static/js/main.636bc34f.chunk.js"
   },
   {
     "revision": "93069cbac6fa2d65ea99",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c712a5bc981e60c47a3604e144d9def3",
     "url": "/ewa_lipska_songs_dashboard/static/media/imgDoughnut.c712a5bc.PNG"
+  },
+  {
+    "revision": "d14a67bebc6fe7f756f7e69f4c80af96",
+    "url": "/ewa_lipska_songs_dashboard/static/media/imgHome.d14a67be.PNG"
   },
   {
     "revision": "58accae1f54e06c75265718ce7fa1e98",
