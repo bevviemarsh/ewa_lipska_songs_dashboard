@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/ewa_lipska_songs_dashboard/static/css/main.e24d2b7c.chunk.css",
-    "main.js": "/ewa_lipska_songs_dashboard/static/js/main.d3154f3f.chunk.js",
-    "main.js.map": "/ewa_lipska_songs_dashboard/static/js/main.d3154f3f.chunk.js.map",
+    "main.css": "/ewa_lipska_songs_dashboard/static/css/main.13581302.chunk.css",
+    "main.js": "/ewa_lipska_songs_dashboard/static/js/main.e076af34.chunk.js",
+    "main.js.map": "/ewa_lipska_songs_dashboard/static/js/main.e076af34.chunk.js.map",
     "runtime-main.js": "/ewa_lipska_songs_dashboard/static/js/runtime-main.15a6a446.js",
     "runtime-main.js.map": "/ewa_lipska_songs_dashboard/static/js/runtime-main.15a6a446.js.map",
-    "static/js/2.e6b2fcd3.chunk.js": "/ewa_lipska_songs_dashboard/static/js/2.e6b2fcd3.chunk.js",
-    "static/js/2.e6b2fcd3.chunk.js.map": "/ewa_lipska_songs_dashboard/static/js/2.e6b2fcd3.chunk.js.map",
+    "static/js/2.3b1faefe.chunk.js": "/ewa_lipska_songs_dashboard/static/js/2.3b1faefe.chunk.js",
+    "static/js/2.3b1faefe.chunk.js.map": "/ewa_lipska_songs_dashboard/static/js/2.3b1faefe.chunk.js.map",
     "index.html": "/ewa_lipska_songs_dashboard/index.html",
-    "precache-manifest.4051abc76b27ae0aeeddea416eaa8536.js": "/ewa_lipska_songs_dashboard/precache-manifest.4051abc76b27ae0aeeddea416eaa8536.js",
+    "precache-manifest.5cdf6b2593685254bcb2614b238199f0.js": "/ewa_lipska_songs_dashboard/precache-manifest.5cdf6b2593685254bcb2614b238199f0.js",
     "service-worker.js": "/ewa_lipska_songs_dashboard/service-worker.js",
-    "static/css/main.e24d2b7c.chunk.css.map": "/ewa_lipska_songs_dashboard/static/css/main.e24d2b7c.chunk.css.map",
-    "static/js/2.e6b2fcd3.chunk.js.LICENSE.txt": "/ewa_lipska_songs_dashboard/static/js/2.e6b2fcd3.chunk.js.LICENSE.txt"
+    "static/css/main.13581302.chunk.css.map": "/ewa_lipska_songs_dashboard/static/css/main.13581302.chunk.css.map",
+    "static/js/2.3b1faefe.chunk.js.LICENSE.txt": "/ewa_lipska_songs_dashboard/static/js/2.3b1faefe.chunk.js.LICENSE.txt",
+    "static/media/imgBar.PNG": "/ewa_lipska_songs_dashboard/static/media/imgBar.78ffe4a9.PNG",
+    "static/media/imgDoughnut.PNG": "/ewa_lipska_songs_dashboard/static/media/imgDoughnut.c712a5bc.PNG",
+    "static/media/imgPolar.PNG": "/ewa_lipska_songs_dashboard/static/media/imgPolar.58accae1.PNG",
+    "static/media/imgRadar.PNG": "/ewa_lipska_songs_dashboard/static/media/imgRadar.70bed997.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.15a6a446.js",
-    "static/js/2.e6b2fcd3.chunk.js",
-    "static/css/main.e24d2b7c.chunk.css",
-    "static/js/main.d3154f3f.chunk.js"
+    "static/js/2.3b1faefe.chunk.js",
+    "static/css/main.13581302.chunk.css",
+    "static/js/main.e076af34.chunk.js"
   ]
 }
