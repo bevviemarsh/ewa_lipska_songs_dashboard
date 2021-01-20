@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3ffbda168c49fc1304f76f630835a55a",
+    "revision": "b0983d9848420c786ebd5561fec194ed",
     "url": "/ewa_lipska_songs_dashboard/index.html"
   },
   {
-    "revision": "c53fe38140c41d98827b",
+    "revision": "20124394503de6bf7365",
     "url": "/ewa_lipska_songs_dashboard/static/css/main.13581302.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ewa_lipska_songs_dashboard/static/js/2.3b1faefe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c53fe38140c41d98827b",
-    "url": "/ewa_lipska_songs_dashboard/static/js/main.e076af34.chunk.js"
+    "revision": "20124394503de6bf7365",
+    "url": "/ewa_lipska_songs_dashboard/static/js/main.1c23c9d5.chunk.js"
   },
   {
     "revision": "93069cbac6fa2d65ea99",
