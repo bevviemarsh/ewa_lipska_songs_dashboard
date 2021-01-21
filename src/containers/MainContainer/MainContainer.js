@@ -15,10 +15,26 @@ const mainContainer = () => {
     >
       <Switch>
         <Route path="/" exact component={DisplayedInfo} />
-        <Route path="/charts/bar/:bar" exact component={DisplayedCharts} />
-        <Route path="/charts/radar/:radar" component={DisplayedCharts} />
-        <Route path="/charts/polar/:polar" component={DisplayedCharts} />
-        <Route path="/charts/pie/:pie" component={DisplayedCharts} />
+        <Route
+          path="/charts/bar/"
+          exact
+          render={(props) => <DisplayedCharts {...props} chartId={"bar"} />}
+        />
+        <Route
+          path="/charts/radar/"
+          exact
+          render={(props) => <DisplayedCharts {...props} chartId={"radar"} />}
+        />
+        <Route
+          path="/charts/polar/"
+          exact
+          render={(props) => <DisplayedCharts {...props} chartId={"polar"} />}
+        />
+        <Route
+          path="/charts/pie/"
+          exact
+          render={(props) => <DisplayedCharts {...props} chartId={"pie"} />}
+        />
       </Switch>
     </motion.div>
   );

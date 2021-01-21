@@ -6,6 +6,16 @@ import DoughnutChart from "./Charts/DoughnutChart";
 import data from "../../../assets/data/songData.json";
 import classes from "./DisplayedCharts.module.css";
 
+import chartUtils from "../../../utils/chartUtils";
+
+const {
+  getDataBackgroundColors,
+  getTitleHandler,
+  getLegendHandler,
+  getTooltipHandler,
+  getChartPropertiesHandler,
+} = chartUtils;
+
 class DisplayedCharts extends Component {
   state = {
     authors: data.songsNumberByAuthor.map((item) => item.author),
@@ -31,20 +41,13 @@ class DisplayedCharts extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (
-      this.getMatchParamHandler(this.props) !==
-      this.getMatchParamHandler(prevProps)
-    ) {
+    if (this.props.chartId !== prevProps.chartId) {
       this.getChartHandler();
     }
   }
 
-  getMatchParamHandler(properProps) {
-    return Object.keys(properProps.match.params)[0];
-  }
-
-  getChartFactoryHandler(propFn, propsValue, bar, radar, polar, pie) {
-    switch (propFn(propsValue)) {
+  getChartFactoryHandler(propsValue, bar, radar, polar, pie) {
+    switch (propsValue) {
       case "bar":
         return bar;
       case "radar":
@@ -64,8 +67,7 @@ class DisplayedCharts extends Component {
 
   getRenderedChart() {
     return this.getChartFactoryHandler(
-      this.getMatchParamHandler,
-      this.props,
+      this.props.chartId,
       this.getProperChartType(
         <BarChart data={this.state.barData} options={this.state.barOptions} />
       ),
@@ -90,8 +92,8 @@ class DisplayedCharts extends Component {
     );
   }
 
-  getChartDataHandler(propFn, propsValue, bar, radar, polar, pie) {
-    switch (propFn(propsValue)) {
+  getChartDataHandler(propsValue, bar, radar, polar, pie) {
+    switch (propsValue) {
       case "bar":
         bar();
         break;
@@ -111,80 +113,13 @@ class DisplayedCharts extends Component {
 
   getChartHandler() {
     this.getChartDataHandler(
-      this.getMatchParamHandler,
-      this.props,
+      this.props.chartId,
       this.getBarDataHandler,
       this.getRadarDataHandler,
       this.getPolarDataHandler,
       this.getPieDataHandler
     );
   }
-
-  getDataBackgroundColors = () => {
-    return [
-      "hsla(357, 100%, 17%, 0.5)",
-      "hsla(126, 72%, 29%, 0.5)",
-      "hsla(37, 100%, 6%, 0.5)",
-      "hsla(29, 100%, 50%, 0.5)",
-      "hsla(240, 16%, 44%, 0.5)",
-      "hsla(46, 74%, 92%, 0.5)",
-      "hsla(300, 62%, 68%, 0.5)",
-    ];
-  };
-
-  getTitleHandler = (title, fontSize, fontColor) => {
-    return {
-      display: true,
-      text: title,
-      fontSize: fontSize,
-      fontColor: fontColor,
-    };
-  };
-
-  getTooltipHandler = (
-    bcgColor,
-    borderLabelColor,
-    bcgLabelColor,
-    labelColor
-  ) => {
-    return {
-      backgroundColor: bcgColor,
-      callbacks: {
-        labelColor: () => {
-          return {
-            borderColor: borderLabelColor,
-            backgroundColor: bcgLabelColor,
-          };
-        },
-        labelTextColor: () => labelColor,
-      },
-    };
-  };
-
-  getLegendHandler = (legendFontSize, legendTextColor) => {
-    return {
-      display: true,
-      labels: {
-        fontSize: legendFontSize,
-        fontColor: legendTextColor,
-        usePointStyle: true,
-      },
-    };
-  };
-
-  getChartPropertiesHandler = () => {
-    return {
-      bar_width: 100,
-      tick_labels_padding: 15,
-      font_size_title: 20,
-      font_size_legend: 15,
-      font_color: "#E8E9F3",
-      getBackgroundColor: (opacityValue) =>
-        `hsla(267, 73%, 3%, ${opacityValue})`,
-      getLabelColors: (opacityValue) => `hsla(357, 100%, 17%, ${opacityValue})`,
-      label_color: "#2EC4B6",
-    };
-  };
 
   getBarDataHandler = () => {
     const {
@@ -196,7 +131,7 @@ class DisplayedCharts extends Component {
       getBackgroundColor,
       getLabelColors,
       label_color,
-    } = this.getChartPropertiesHandler();
+    } = getChartPropertiesHandler();
 
     this.setState({
       barData: {
@@ -206,18 +141,18 @@ class DisplayedCharts extends Component {
             label: "genre-source text's relation",
             barThickness: bar_width,
             data: this.state.relationNumber,
-            backgroundColor: this.getDataBackgroundColors(),
+            backgroundColor: getDataBackgroundColors(),
           },
         ],
       },
       barOptions: {
-        title: this.getTitleHandler(
+        title: getTitleHandler(
           "Genre of text related to the source of text",
           font_size_title,
           font_color
         ),
-        legend: this.getLegendHandler(font_size_legend, font_color),
-        tooltips: this.getTooltipHandler(
+        legend: getLegendHandler(font_size_legend, font_color),
+        tooltips: getTooltipHandler(
           getBackgroundColor(0.8),
           getLabelColors(0.7),
           getLabelColors(0.5),
@@ -263,7 +198,7 @@ class DisplayedCharts extends Component {
       getBackgroundColor,
       getLabelColors,
       label_color,
-    } = this.getChartPropertiesHandler();
+    } = getChartPropertiesHandler();
 
     this.setState({
       radarData: {
@@ -272,7 +207,7 @@ class DisplayedCharts extends Component {
           {
             label: "number of songs",
             data: this.state.songsByAuthors,
-            backgroundColor: this.getDataBackgroundColors(),
+            backgroundColor: getDataBackgroundColors(),
             pointRadius: 7,
             pointHoverRadius: 12,
             pointLabelFontColor: font_color,
@@ -304,13 +239,13 @@ class DisplayedCharts extends Component {
             fontColor: font_color,
           },
         },
-        title: this.getTitleHandler(
+        title: getTitleHandler(
           "Number of songs (by authors)",
           font_size_title,
           font_color
         ),
-        legend: this.getLegendHandler(font_size_legend, font_color),
-        tooltips: this.getTooltipHandler(
+        legend: getLegendHandler(font_size_legend, font_color),
+        tooltips: getTooltipHandler(
           getBackgroundColor(0.8),
           getLabelColors(0.7),
           getLabelColors(0.5),
@@ -328,7 +263,7 @@ class DisplayedCharts extends Component {
       getBackgroundColor,
       getLabelColors,
       label_color,
-    } = this.getChartPropertiesHandler();
+    } = getChartPropertiesHandler();
 
     this.setState({
       polarData: {
@@ -336,7 +271,7 @@ class DisplayedCharts extends Component {
         datasets: [
           {
             data: this.state.genreNumber,
-            backgroundColor: this.getDataBackgroundColors(),
+            backgroundColor: getDataBackgroundColors(),
             borderColor: font_color,
             borderWidth: 2,
             hoverBorderWidth: 5,
@@ -344,14 +279,14 @@ class DisplayedCharts extends Component {
         ],
       },
       polarOptions: {
-        title: this.getTitleHandler("Genres", font_size_title, font_color),
-        tooltips: this.getTooltipHandler(
+        title: getTitleHandler("Genres", font_size_title, font_color),
+        tooltips: getTooltipHandler(
           getBackgroundColor(0.8),
           getLabelColors(0.7),
           getLabelColors(0.5),
           label_color
         ),
-        legend: this.getLegendHandler(font_size_legend, font_color),
+        legend: getLegendHandler(font_size_legend, font_color),
         scale: {
           ticks: {
             fontColor: font_color,
@@ -374,7 +309,7 @@ class DisplayedCharts extends Component {
       getBackgroundColor,
       getLabelColors,
       label_color,
-    } = this.getChartPropertiesHandler();
+    } = getChartPropertiesHandler();
 
     this.setState({
       doughnutData: {
@@ -382,7 +317,7 @@ class DisplayedCharts extends Component {
         datasets: [
           {
             data: this.state.sourceNumber,
-            backgroundColor: this.getDataBackgroundColors(),
+            backgroundColor: getDataBackgroundColors(),
             borderColor: font_color,
             borderWidth: 2,
             hoverBorderWidth: 5,
@@ -391,18 +326,14 @@ class DisplayedCharts extends Component {
       },
       doughnutOptions: {
         cutoutPercentage: 70,
-        title: this.getTitleHandler(
-          "Type of source",
-          font_size_title,
-          font_color
-        ),
-        tooltips: this.getTooltipHandler(
+        title: getTitleHandler("Type of source", font_size_title, font_color),
+        tooltips: getTooltipHandler(
           getBackgroundColor(0.8),
           getLabelColors(0.7),
           getLabelColors(0.5),
           label_color
         ),
-        legend: this.getLegendHandler(font_size_legend, font_color),
+        legend: getLegendHandler(font_size_legend, font_color),
       },
     });
   };

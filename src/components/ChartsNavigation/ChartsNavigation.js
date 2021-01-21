@@ -7,10 +7,10 @@ class ChartsNavigation extends Component {
   state = {
     navigationItems: [
       { title: "Home", pathName: "/" },
-      { title: "Bar", pathName: "/charts/bar/:bar" },
-      { title: "Radar", pathName: "/charts/radar/:radar" },
-      { title: "Polar", pathName: "/charts/polar/:polar" },
-      { title: "Doughnut", pathName: "/charts/pie/:pie" },
+      { title: "Bar", pathName: "/charts/bar/" },
+      { title: "Radar", pathName: "/charts/radar/" },
+      { title: "Polar", pathName: "/charts/polar/" },
+      { title: "Doughnut", pathName: "/charts/pie/" },
     ],
   };
 
